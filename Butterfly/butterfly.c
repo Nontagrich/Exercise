@@ -6,7 +6,9 @@ int main()
   int rol1,rol2;
   printf("Enter number for create butterfly: ");
   scanf("%d",&n);
-  
+
+
+  //First Loop
   for(int i=1;i<=2*n-1;i++){
   	if(i==1 || i==(2*n-1)){
   		printf("*");
@@ -32,8 +34,9 @@ int main()
 	  printf("\n");
   }
   
+  //Second Loop
   int e2 = 2;
-  
+
   for(rol2 = n+1 ;rol2 <= 2*n-1 ; rol2++){
   	for(col2 = 1; col2<= 2*n-1; col2++){
   		if(col2 <= rol2-e2){
